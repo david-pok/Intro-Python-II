@@ -37,6 +37,25 @@ room['treasure'].s_to = room['narrow']
 #
 # Main
 #
+p = Player('david', 'outside')
+
+# input = input(">>>>>Enter your command: ")
+inp = ''
+
+while inp != 'q':
+    print(p.location)
+    inp = input("Enter your command: ")
+
+    # if inp == 'n' and currentRooms n_to exists:
+    #     #n_to
+    # elif inp == 's' and currentRooms s_to exists:
+    #     #s_to
+    # elif inp == 'w' and currentRooms w_to exists:
+    #     #w_to
+    # elif inp == 'e' and currentRooms e_to exists:
+    #     #e_to
+    # elif inp == 'q':
+        # quit
 
 # Make a new player object that is currently in the 'outside' room.
 
@@ -50,6 +69,3 @@ room['treasure'].s_to = room['narrow']
 # Print an error message if the movement isn't allowed.
 #
 # If the user enters "q", quit the game.
-
-Player('default', 'outside')
-
