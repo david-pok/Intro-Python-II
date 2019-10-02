@@ -2,9 +2,11 @@
 # currently.
 
 class Player:
-    def __init__(self, name, curRoom):
+    def __init__(self, name, location):
         self.name = name
-        self.curRoom = curRoom
+        self.location = location
+    def __repr__(self):
+        return self.name
 
 # class Store:
 #     def __init__(self, store_type, depts=[]):
